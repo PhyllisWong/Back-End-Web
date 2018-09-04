@@ -1,0 +1,81 @@
+# .gitignore
+# Simple Git Web Project Template
+[comment]: <> (Minimal ignore files for boilerplate web project.)
+[link](https://github.com/PhyllisWong/Web-Templates)
+[comment]: <> (ver 201807823)
+
+[comment]: <> (This file is tailored for a general web project.)
+
+[comment]: <> (This file specifies intentionally untracked files to ignore)
+[link](http://git-scm.com/docs/gitignore)
+
+### NOTES:
+[comment]: <> (The purpose of gitignore files is to ensure that certain files not
+tracked by Git remain untracked.)
+
+[comment]: <> (To ignore uncommitted changes in a file that is already tracked,
+use `git update-index --assume-unchanged`.)
+
+[comment]: <> (To stop tracking a file that is currently tracked,
+use `git rm --cached`)
+
+# -----------------------------------------------------------------
+
+[comment]: <> (Ignore all files starting with . or ~)
+.*
+~*
+
+[comment]: <> (ignore node/grunt dependency directories)
+node_modules/
+
+[comment]: <> ( ignore composer vendor directory)
+/vendor
+
+[comment]: <> (ignore components loaded via Bower)
+/bower_components
+
+[comment]: <> (ignore jekyll build directory)
+/_site
+
+[comment]: <> ( ignore OS generated files)
+ehthumbs.db
+Thumbs.db
+
+[comment]: <> (ignore Editor files)
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+*.idea
+
+[comment]: <> (ignore log files and databases)
+*.log
+*.sql
+*.sqlite
+
+[comment]: <> (ignore compiled files)
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+[comment]: <> (ignore packaged files)
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+node_modules
+
+# -------------------------
+### BEGIN Whitelisted Files
+# -------------------------
+
+[comment]: <> (track these files, if they exist)
+!.gitignore
+!.editorconfig
+!.phpcs.xml.dist
